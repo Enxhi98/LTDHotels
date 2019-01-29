@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="ltd.hotels1.RoomInfoController">
+   <children>
+      <SplitPane dividerPositions="0.3201320132013201" layoutX="-3.0" layoutY="-3.0" prefHeight="298.0" prefWidth="608.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Text layoutX="28.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Function Room">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="28.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Properties:" />
+                  <Text layoutX="28.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View: Garden View" />
+                  <Text layoutX="28.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price: £220" />
+                  <Text layoutX="28.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type: Function" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="208.0" prefWidth="240.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" prefHeight="403.0" prefWidth="421.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="401.0" prefWidth="195.0">
+                           <children>
+                              <Text layoutX="35.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Single Bedroom">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="35.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Properties:" />
+                              <Text layoutX="35.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View: City View" />
+                              <Text layoutX="35.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price: £50" />
+                              <Text layoutX="35.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type: Single" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="401.0" prefWidth="238.0">
+                           <children>
+                              <Text layoutX="25.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double bedroom">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="25.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Properties:" />
+                              <Text layoutX="25.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View: Sea View" />
+                              <Text layoutX="25.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price: £65" />
+                              <Text layoutX="25.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type: Double" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Button fx:id="confirm" focusTraversable="false" layoutX="297.0" layoutY="338.0" mnemonicParsing="false" onAction="#confirmRoomToBook" prefHeight="27.0" prefWidth="238.0" text="Confirm Room To Book" />
+      <Button fx:id="back" focusTraversable="false" layoutX="47.0" layoutY="338.0" mnemonicParsing="false" onAction="#goBack" text="Go Back" />
+   </children>
+</AnchorPane>
